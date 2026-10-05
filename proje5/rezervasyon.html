@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmicTours | Galaktik Bilet Rezervasyonu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="logo">CosmicTours</h1>
+        <nav>
+            <a href="../index.html" class="ana-menu-link">&larr; Ana Menü</a>
+            <a href="index.html">Merkez Üs</a>
+            <a href="turlar.html">Gezegen Turları</a>
+            <a href="rezervasyon.html" class="aktif-link">Bilet & Rezervasyon</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-kapsayici">
+            <h2>Galaktik Bilet Rezervasyonu</h2>
+            <p>Hayalinizdeki uzay seyahatini planlayın. Bilgilerinizi girin ve mekikteki yerinizi ayırtın.</p>
+
+            <form action="#" class="uzay-formu" onsubmit="event.preventDefault(); alert('Tebrikler! Bilet talebiniz Galaktik Merkeze iletildi.');">
+                
+                <div class="form-grup">
+                    <label for="adsoyad">Ad Soyad:</label>
+                    <input type="text" id="adsoyad" placeholder="Örn: Asım Can Karasakal" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="email">Galaktik E-Posta / İletişim:</label>
+                    <input type="email" id="email" placeholder="isim@uzay.com" required>
+                </div>
+
+                <div class="form-grup">
+                    <label for="hedef">Hedef Gezegen Seçin:</label>
+                    <select id="hedef">
+                        <option value="mars">Mars (3 Ay - $45,000)</option>
+                        <option value="jupiter">Jüpiter (13 Ay - $120,000)</option>
+                        <option value="saturn">Satürn (3 Yıl - $210,000)</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label for="sinif">Sınıf Tercihi:</label>
+                    <div class="radyo-grubu">
+                        <label><input type="radio" name="sinif" value="ekonomi" checked> Standart Mekik</label>
+                        <label><input type="radio" name="sinif" value="VIP"> VIP Süit (+Yerçekimli Kamara)</label>
+                    </div>
+                </div>
+
+                <div class="form-grup">
+                    <label for="kisi">Yolcu Sayısı:</label>
+                    <input type="number" id="kisi" min="1" max="5" value="1">
+                </div>
+
+                <div class="form-grup">
+                    <label for="notlar">Özel Istekler & Sağlık Durumu:</label>
+                    <textarea id="notlar" rows="4" placeholder="Yerçekimsiz ortam alerjisi, özel yemek tercihi vb..."></textarea>
+                </div>
+
+                <button type="submit" class="neon-buton form-buton">Uzay Biletini Onayla 🚀</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CosmicTours A.Ş. Tüm Galaktik Hakları Saklıdır. | Asım Can Karasakal</p>
+    </footer>
+
+</body>
+</html>

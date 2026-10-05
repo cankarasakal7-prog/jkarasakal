@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keşfetmeye Başlayalım | Asım Can Karasakal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', system-ui, sans-serif; }
+        body { background-color: #f8fafc; color: #0f172a; padding: 60px 20px; min-height: 100vh; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .header-section { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; gap: 20px; }
+        .header-title h1 { font-size: 36px; font-weight: 800; color: #0f172a; line-height: 1.2; letter-spacing: -0.5px; }
+        .header-desc { max-width: 320px; color: #64748b; font-size: 14px; line-height: 1.5; text-align: right; }
+        .proje-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .proje-kart { background: #ffffff; border-radius: 16px; padding: 32px 28px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); border: 1px solid #f1f5f9; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .proje-kart:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08); }
+        .proje-rozet { font-size: 11px; font-weight: 800; color: #0d9488; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 12px; display: block; }
+        .proje-kart h3 { font-size: 22px; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
+        .proje-kart p { font-size: 14px; color: #64748b; line-height: 1.6; margin-bottom: 28px; }
+        .main-btn { display: inline-block; align-self: flex-start; background-color: #0f172a; color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 700; padding: 12px 20px; border-radius: 8px; transition: background-color 0.2s ease; }
+        .main-btn:hover { background-color: #1e293b; }
+        @media (max-width: 768px) {
+            .header-section { flex-direction: column; }
+            .header-desc { text-align: left; }
+            .proje-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <div class="header-title">
+                <h1>Merhaba, keşfetmeye<br>başlayalım.</h1>
+            </div>
+            <div class="header-desc">
+                Şehir keşfinden uzaya, teknolojiden uzay turizmine uzanan projelerim.
+            </div>
+        </div>
+
+        <div class="proje-grid">
+            <!-- Proje 1 -->
+            <div class="proje-kart">
+                <div>
+                    <span class="proje-rozet">ŞEHİR REHBERİ • GİRESUN</span>
+                    <h3>Giresun Çanakçı</h3>
+                    <p>Eşsiz doğası, geleneksel yayla kültürü ve dünyaca ünlü Kuşdili mirasını yakından tanıyın.</p>
+                </div>
+                <a href="proje1/index.html" class="main-btn">Şehri keşfet &rarr;</a>
+            </div>
+
+            <!-- Proje 2 -->
+            <div class="proje-kart">
+                <div>
+                    <span class="proje-rozet">UZAY • GALERİ • KEŞİF</span>
+                    <h3>Mars Keşfi</h3>
+                    <p>Kızıl gezegenin dünyasına göz at, uzay galerisini ve yaşam sınırlarını gez.</p>
+                </div>
+                <a href="proje2/index.html" class="main-btn">Mars'a git &rarr;</a>
+            </div>
+
+            <!-- Proje 3 -->
+            <div class="proje-kart">
+                <div>
+                    <span class="proje-rozet">TEKNOLOJİ • MAKALE</span>
+                    <h3>Yapay Zekâ</h3>
+                    <p>Yapay zekânın, web standartlarının ve siber güvenliğin gelecekteki etkilerini oku.</p>
+                </div>
+                <a href="proje3/index.html" class="main-btn">Makaleyi oku &rarr;</a>
+            </div>
+
+            <!-- Proje 4 -->
+            <div class="proje-kart">
+                <div>
+                    <span class="proje-rozet">AKADEMİ • GİZLİ PORTAL</span>
+                    <h3>Kahraman Akademisi</h3>
+                    <p>Süper yetenekli bireylerin eğitildiği, görev raporlarının ve kadronun yer aldığı gizli portal.</p>
+                </div>
+                <a href="proje4/index.html" class="main-btn">Akademiye Gir &rarr;</a>
+            </div>
+
+            <!-- Proje 5 (YENİ PROJE) -->
+            <div class="proje-kart">
+                <div>
+                    <span class="proje-rozet">UZAY TURİZMİ • CSS SİHİRBAZI</span>
+                    <h3>CosmicTours</h3>
+                    <p>Güneş sisteminin egzotik köşelerine lüks seyahatler, gezegen turları ve interaktif bilet rezervasyonu.</p>
+                </div>
+                <a href="proje5/index.html" class="main-btn">Uzaya Açıl &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
